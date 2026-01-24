@@ -4,7 +4,7 @@ import './style.css';
 const ProductCard = ({ image, name, price }) => {
     return (
         <div className="product-card">
-            <img src={image}/>
+            <img src={image} className='product-image' />
             <h1>{name}</h1>
             <p>${price}</p>
             <button>Add to cart</button>

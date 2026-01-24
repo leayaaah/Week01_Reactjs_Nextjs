@@ -5,24 +5,18 @@ import './App.css'
 import ProductCard from './components/ProductCard'
 
 function App() {
-  const products = [
-    {
-      id: 1,
-      name: "Product 1",
-      price: 200000,
-      image: ""
-    },
-    {
-      id: 2,
-      name: "Product 2",
-      price: 300000,
-      image: ""
-    },
-  ];
-  return (
+  var product1 = {
+    id: 1,
+    name: "Product 1",
+    price: 100,
+    description: "This is product 1",
+    imageUrl: "https://placehold.co/200x150"
+  }
+    return (
     <div className="App">
-    
+      <ProductCard image={product1.imageUrl} name={product1.name} price={product1.price} />
     </div>
+
   )
 }
 
