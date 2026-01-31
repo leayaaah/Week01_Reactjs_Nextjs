@@ -5,8 +5,6 @@ import './App.css'
 import FormRow from './component/FormRow'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <div className='container'>
